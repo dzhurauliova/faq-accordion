@@ -1,0 +1,35 @@
+.collapse-box {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.collapse-header {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.collapse-content {
+  padding: 10px 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}

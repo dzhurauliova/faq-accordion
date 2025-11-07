@@ -20,7 +20,6 @@ This project was created using `npm create vite@latest` with the **React + JavaS
 ## Technology
 
 - Vite (React + JavaScript)
-- Geist UI (React component library)
 - HTML / CSS
 - Git & GitHub 
 
