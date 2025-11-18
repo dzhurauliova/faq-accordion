@@ -19,8 +19,16 @@ This project was created using `npm create vite@latest` with the **React + JavaS
 
 ## Technology
 
-- Vite (React + JavaScript)
-- HTML / CSS
+### HTML
+- Semantic HTML5
+
+### CSS
+- Custom CSS
+- Flexbox & Grid
+- Mobile-first responsive design
+
+### Tools
+- Vite
 - Git & GitHub 
 
 ---
