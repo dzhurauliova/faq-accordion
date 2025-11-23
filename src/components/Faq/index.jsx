@@ -2,15 +2,19 @@ import { useState } from "react"
 import './style.css'
 
 export const CollapseBox = ({title, text}) => {
-    const [open, setOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggleBox = () => {
+        setIsOpen(!isOpen)
+    }
 
     return(
         <div className="collapse-box">
-            <button className="collapse-header" onClick={() => setOpen(!open)}>
-                <h2>{title}</h2>
-                 <span className={`arrow ${open ? "open" : ""}`}>▼</span>
+            <button className="collapse-header" onClick={toggleBox}>
+                <h2 className="collapse-title">{title}</h2>
+                <span className={`arrow ${isOpen ? "open" : ""}`} />
             </button>
-            <p>{open && <div className="collapse-content">{text}</div>}</p>
+            <p>{isOpen && <div className="collapse-content">{text}</div>}</p>
         </div>
     )
 }

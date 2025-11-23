@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    color: var(--purple950);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.header-img {
+    width: 30px;
+}

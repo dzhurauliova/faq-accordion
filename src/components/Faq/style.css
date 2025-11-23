@@ -1,6 +1,7 @@
-.collapse-box {
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
+.collapse-box:not(:last-child)  {
+  padding: 0;
+  margin-block: 20px;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
 }
 
 .collapse-header {
@@ -8,28 +9,49 @@
   background: none;
   border: none;
   outline: none;
-  font-size: 1rem;
   text-align: left;
-  display: flex;
+  cursor: pointer;
+  padding: 0;
+ 
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
-  font-weight: bold;
-  padding: 10px 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+}
+
+.collapse-title {
+  color: var(--purple950);
+  font-weight: 600;
+  margin: 0;
+  font-size: 16px;
 }
 
 .collapse-content {
-  padding: 10px 0;
-  color: #555;
-  font-size: 0.95rem;
+  padding: 0;
+  color: var(--purple600);
+  font-weight: 400;
   line-height: 1.5;
   transition: all 0.3s ease;
+  font-size: 16px;
 }
 
 .arrow {
   transition: transform 0.3s ease;
+  background-image: url("/src/assets/images/icon-plus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
 }
 
 .arrow.open {
-  transform: rotate(180deg);
+  background-image: url("/src/assets/images/icon-minus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
 }
