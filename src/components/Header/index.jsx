@@ -1,10 +1,10 @@
 import './style.css'
 
-export const Header = () => {
+export const Header = ({icon}) => {
     return(
         <>
             <section className="header">
-                <img className='header-img' src="/src/assets/images/icon-star.svg" alt="icon-star"/>
+                <img className='header-img' src={icon} alt="icon-star"/>
                 <h1>FAQs</h1>
             </section>
         </>
